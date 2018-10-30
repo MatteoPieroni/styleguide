@@ -1,3 +1,1 @@
-# styleguide
-
-Storybook and React style guide
+# My typescrypt project
