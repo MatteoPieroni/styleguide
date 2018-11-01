@@ -10,15 +10,26 @@
 //               in writing. Copyright 2017 Abel & Cole Limited.
 //---------------------------------------------------------------------------------------
 import * as React from 'react';
-import InputError from './InputError.tsx';
+import InputError from './InputError';
 
-class TextInput extends React.Component {
+export interface Props {
+    wrapperClassName?: string;
+    placeholder: string;
+    onBlur?: () => void;
+    onChange?: () => void;
+    value: string;
+    type: string;
+    name: string;
+    errorMessage?: string;
+}
+
+class TextInput extends React.Component<Props, object> {
 
     //-------------------------------------------------------------------------------
     // Constructor : TextInput
     // Description : Initialises the state of the textbox.
     //-------------------------------------------------------------------------------
-    constructor(props) {
+    constructor(props: Props) {
         super(props);
     }
  

@@ -11,7 +11,13 @@
 //---------------------------------------------------------------------------------------
 import * as React from 'react';
 
-class InputError extends React.Component {
+export interface Props {
+    className?: string;
+    visible?: string;
+    errorMessage?: string;
+}
+
+class InputError extends React.Component<Props, object> {
 
     //-------------------------------------------------------------------------------
     // Method       : render

@@ -8,7 +8,7 @@ const webpack = {
         extensions: ['.ts', '.tsx', '.js', '.json'],
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.tsx?$/,
                 loader: 'awesome-typescript-loader',
